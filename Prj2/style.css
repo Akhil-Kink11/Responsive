@@ -85,18 +85,18 @@ html, body {
     font-weight: 100;
 }
 
-#main #one {
+/* #main #one {
     width: 45vw;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-}
-
+} */
+/* 
 #main #two {
     position: absolute;
     width: 30vw;
     left: 2%;
     top: 50%;
     transform: translate(-50%, -50%);
-}
+} */
