@@ -145,7 +145,7 @@ html, body {
     text-align: center;
     color: #fff;
     font-weight: 500;
-    font-size: 13px;
+    font-size: 1vw;
 }
 
 #bottom img {
@@ -160,7 +160,7 @@ html, body {
     letter-spacing: .2vw;
     border-radius: 100px;
     text-transform: uppercase;
-    font-size: 10px;
+    font-size: .8vw;
     border: none;
     outline: none;
 }
@@ -188,7 +188,7 @@ html, body {
 
     #midtext .row h4 {
         color: #fff;
-        font-size: 3vw;
+        font-size: 4vw;
         font-weight: 100;
         letter-spacing: .1vw;
     }
@@ -211,5 +211,56 @@ html, body {
 
     #main #bottom button {
         padding: 2.8vw 4.8vw;
+    }
+
+    #bottom p {
+        font-size: 10px;
+    }
+
+    #bottom button {
+        font-size: 8px;
+    }
+}
+
+@media (max-width:1000px) and (min-width: 500px) {
+    #nav {   
+        height: 10vh;
+    }
+
+    #nav #ncenter h3 {
+        font-size: 4vw;
+        font-weight: 100;
+    }
+
+    #nav .line {
+        width: 11.5vw;
+        height: 1.3px;
+    }
+
+    #midtext>h1 {
+        white-space: nowrap;
+        line-height: 14vw;
+        font-size: 16vw;
+    }
+
+    #midtext .row h4 {
+        font-size: 2vw;
+        letter-spacing: .12vw;
+    }
+
+    #main #one {
+        width: 50vw;
+    }
+
+    #bottom img {
+        width: 70%;
+    }
+
+    #bottom p {
+        font-size: 11.5px;
+    }
+
+    #bottom button {
+        font-size: 9px;
     }
 }
