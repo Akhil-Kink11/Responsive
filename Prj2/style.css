@@ -2,6 +2,19 @@
     font-family: 'delirium';
     src: url(./delirium_ncv/DELIRIUM\ NCV.ttf);
 }
+
+@font-face {
+    font-family: Gilroy;
+    src: url("./Gilroy/Gilroy-Medium.ttf");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Gilroy;
+    src: url("./Gilroy/Gilroy-Regular.ttf");
+    font-weight: 400;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -15,8 +28,10 @@ html, body {
 }
 
 #main {
+    position: relative ;
     width: 100%;
     min-height: 100vh;
+    overflow: hidden;
     background: radial-gradient(#dbdfdd 1%, #86b2a3, #86b2a3);
 }
 
@@ -69,6 +84,7 @@ html, body {
 #midtext .row h4 {
     font-family: 'delirium';
     color: #fff;
+    letter-spacing: .04vw;
     font-size: 1.7vw;
     font-weight: 100;
 }
@@ -80,23 +96,120 @@ html, body {
 #midtext>h1 {
     font-family: 'delirium';
     color: #b7fce5;
-    line-height: 11vw;
+    line-height: 10vw;
     font-size: 12vw;
     font-weight: 100;
 }
 
-/* #main #one {
-    width: 45vw;
+#main #one {
+    width: 35vw;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-} */
-/* 
+}
+
 #main #two {
+    width: 18vw;
     position: absolute;
-    width: 30vw;
-    left: 2%;
+    left: -10%;
     top: 50%;
-    transform: translate(-50%, -50%);
-} */
+    transform: translate(0%, -50%);
+}
+
+#main #three {
+    width: 15vw;
+    position: absolute;
+    right: -7%;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+
+#main #bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 5%;
+    height: 200px;
+    width: 50%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    /* background-color: red; */
+}
+
+#bottom p {
+    width: 80%;
+    margin: 20px 0;
+    text-align: center;
+    color: #fff;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+#bottom img {
+    width: 60%;
+}
+
+#bottom button {
+    padding: .9vw 2.8vw;
+    background-color: #aac3ba;
+    color: #425951;
+    font-weight: 800;
+    letter-spacing: .2vw;
+    border-radius: 100px;
+    text-transform: uppercase;
+    font-size: 10px;
+    border: none;
+    outline: none;
+}
+
+@media (max-width: 500px) {
+    #nav {   
+        height: 10vh;
+    }
+
+    #nav #ncenter h3 {
+        font-size: 7vw;
+        font-weight: 100;
+    }
+
+    #nav .line {
+        width: 11.5vw;
+        height: 1.5px;
+    }
+
+    #midtext>h1 {
+        white-space: nowrap;
+        line-height: 25vw;
+        font-size: 30vw;
+    }
+
+    #midtext .row h4 {
+        color: #fff;
+        font-size: 3vw;
+        font-weight: 100;
+        letter-spacing: .1vw;
+    }
+
+    #main #one {
+        width: 80vw;
+    }
+
+    #main #two {
+        width: 20vw;
+    }
+
+    #main #three {
+        width: 17vw;
+    }
+
+    #main #bottom {
+        width: 80%;
+    }
+
+    #main #bottom button {
+        padding: 2.8vw 4.8vw;
+    }
+}
